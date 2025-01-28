@@ -20,7 +20,14 @@ public class DataInitializerTest {
 
 	@BeforeEach
 	void setUp() {
-		MockitoAnnotations.openMocks(this);
+		MockitoAnnotations.openMocks(this);	
+		try {
+			if (geonameService.getGeonames().size() == 0)
+				geonameService.loadGeonamesData();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Test
