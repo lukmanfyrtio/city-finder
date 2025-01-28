@@ -21,13 +21,6 @@ public class DataInitializerTest {
 	@BeforeEach
 	void setUp() {
 		MockitoAnnotations.openMocks(this);
-//		Simulate start application
-		try {
-			geonameService.loadGeonamesData();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	@Test
