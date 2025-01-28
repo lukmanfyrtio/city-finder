@@ -1,0 +1,4 @@
+io\lacak\city_finder_api\DataInitializerTest.class
+io\lacak\city_finder_api\JaroWinklerSimilarityTest.class
+io\lacak\city_finder_api\HaversineTest.class
+io\lacak\city_finder_api\CityFinderApplicationTests.class
